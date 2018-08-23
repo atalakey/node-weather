@@ -25,7 +25,7 @@ const geocodeAddress = (address, callback) => {
       });
     } else {
       callback('Google API error:'
-              +`\nResponse Status Code: ${response.statusCode}`
+              +`\nHTTP Status Code: ${response.statusCode}`
               +`\nRequest Status: ${body.status}`
               +`\nError Message: ${body.error_message}`);
     }
